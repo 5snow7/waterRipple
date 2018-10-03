@@ -1,4 +1,4 @@
-let can;let row,col;
+let row,col;
 let cur=[];
 
 function test(ar){
