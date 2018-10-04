@@ -1,5 +1,5 @@
 let sno;let can;
-let tesS;
+let sl;
 function setup() {
 row=500;col=600;rectMode(CENTER);
 can=createCanvas(600,500);
@@ -7,10 +7,10 @@ can.position(200,30);
 can.class("bdd");
 sno=select('#snow');
 sno.position(30,50);
-tesS=createSlider(0,100,50,2);
-tesS.position(50,400);
-start(cur);
-refig(cur);
+sl=createSlider(0,100,50,2);
+sl.position(50,400);
+
+
 paint(cur);
 }
 

@@ -1,14 +1,6 @@
 let row,col;
 let cur=[];
 
-function test(ar){
- for(let i=0;i<col;i++){
- for(let j=0;j<row;j++){
-  ar[i][j]=i+j*col;
-fill(250,0,0);text(ar[i][j],20*i,20+20*j);
-//fill(0,250,0);rect(20*i,20*j,20,20);
-  }} }
-
 function start(ar){
 for(let i=0;i<col;i++){
 	ar[i]=[];
@@ -27,10 +19,10 @@ ar[i][j]=rule(ar[i-1][j-1],ar[i][j-1],ar[i+1][j-1]);
 }
 
 function paint(ar){
-	noStroke();
-	for(let i=0;i<col;i++){
+	start(ar);refig(ar);noStroke();
 	for(let j=0;j<row;j++){
-if(ar[i][j]==0){fill(250,0,0);rect(i,j,1,1);}
+for(let i=0;i<col;i++){
+	if(ar[i][j]==0){fill(250,0,0);rect(i,j,1,1);}
 else if(ar[i][j]==1){fill(0,250,0);rect(i,j,1,1);}
 }}
 }
