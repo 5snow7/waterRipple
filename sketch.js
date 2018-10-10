@@ -1,5 +1,6 @@
 let sno;let can;
-let sl,inp;
+let sl;let inp;
+
 function setup() {
 row=500;col=600;rectMode(CENTER);
 can=createCanvas(col,row);
@@ -15,26 +16,29 @@ sl.position(50,200);
 //start(cur);
 //paint(cur);textSize(36);
 can.text('test',20,30);
+sl.position(50,400);
+inp=createInput("test of array");inp.position(20,200);
+inp.changed(tes);
+text(list[1],40,50);
+text("10011001 or 10100101", 20,100);
+//paint(cur);
+
 }
 
 function draw() {
- // background(250,250,0);
-//test(cur);
-//SSSpaint(cur);
-text('test',20,30);
-//text(str.charAt(2),50,70);
+
 		}
 		
 let str;
 		
-function tes(){
-	 //str=inp.value();
-	
-	//paint(cur);textSize(36);
-    //for(let j=0;j<str.length;j++){stroke(0,250,0);
-	//text(str.charAt(j),50,70+20*j)}
 
-	}
- 
- 
-  
+function tes(){
+ let str=inp.value();
+ for(let j=0;j<str.length;j++){textSize(30);
+ stroke(0,250,0);list[j]=str.charAt(j);
+ text(list[j],40,40+20*j);
+ }
+ paint(cur);
+ }
+
+
