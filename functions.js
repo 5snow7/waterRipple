@@ -3,7 +3,7 @@ let cur=[];
 
 function start(ar){
 for(let i=0;i<col;i++){
-	ar[i]=[];
+	let ar[i]=[];
 	for(let j=0;j<row;j++){
     ar[i][j]=0;		
 	}
@@ -26,14 +26,15 @@ for(let i=0;i<col;i++){
 else if(ar[i][j]==1){fill(0,250,0);rect(i,j,1,1);}
 }}
 }
-
+let list={0,1,0,1,1,0,1,0}
 function rule(x,y,z){
-if(x==1&&y==1&&z==1){return 0;}
-else if(x==1&&y==1&&z==0){return 1;}
-else if(x==1&&y==0&&z==1){return 0;}
-else if(x==1&&y==0&&z==0){return 1;}
-else if(x==0&&y==1&&z==1){return 1;}
-else if(x==0&&y==1&&z==0){return 0;}
-else if(x==0&&y==0&&z==1){return 1;}
-else if(x==0&&y==0&&z==0){return 0;}
+if(x==1&&y==1&&z==1){return 0;}//list[0];}
+else if(x==1&&y==1&&z==0){return 1;}// list[1];}
+else if(x==1&&y==0&&z==1){return 1;}//list[2];}
+else if(x==1&&y==0&&z==0){return 0;}//list[3];}
+else if(x==0&&y==1&&z==1){return 1;}//list[4];}
+else if(x==0&&y==1&&z==0){return 1;}//list[5];}
+else if(x==0&&y==0&&z==1){return 0;}//list[6];}
+else if(x==0&&y==0&&z==0){return 0;}//list[7];}
+return 1;
 	}
