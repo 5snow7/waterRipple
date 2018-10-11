@@ -27,7 +27,7 @@ else if(ar[i][j]==1){fill(0,250,0);rect(i,j,1,1);}
 }}
 }
 
-list=[0,1,0,1,1,0,1,0];
+//list=[0,1,0,1,1,0,1,0];
 
 function rule(x,y,z){
 if(x==1&&y==1&&z==1){return list[0];}

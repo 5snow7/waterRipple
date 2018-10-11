@@ -4,34 +4,21 @@ let sl;let inp;
 function setup() {
 row=500;col=600;rectMode(CENTER);
 can=createCanvas(col,row);
-can.position(200,30);
-can.class("bdd");
-sno=select('#snow');
-sno.position(30,50);
-sl=createSlider(0,100,50,2);
-sl.position(50,200);
+can.position(300,30);can.class("bdd");
+startup();
+sno=select('#snow');sno.position(40,50);
+sno.class('inpbdd');
 
-//inp=createInput("enter string for test");
-//inp.position(20,400);inp.changed(tes);
-//start(cur);
-//paint(cur);textSize(36);
-can.text('test',20,30);
-sl.position(50,400);
-inp=createInput("test of array");inp.position(20,200);
-inp.changed(tes);
-text(list[1],40,50);
+
 text("10011001 or 10100101", 20,100);
-//paint(cur);
-
 }
 
 function draw() {
-
-		}
+	move();
+	pic.position(pos.x,pos.y);
+}
 		
 let str;
-		
-
 function tes(){
  let str=inp.value();
  for(let j=0;j<str.length;j++){textSize(30);
