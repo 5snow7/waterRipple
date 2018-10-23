@@ -14,6 +14,7 @@ startup();
 hr1=select('#hr');hr1.position(50,120);
 hr1.class('inpbdd');
 text("10011001 or 10100101 or 10110110", 20,100);
+text("01011001", 20,130);
 
 }
 
