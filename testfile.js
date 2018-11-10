@@ -3,7 +3,7 @@ let pic,par,inp,sl;let angle=0;
 function startup(){
 
 pic=createImg('testpic.jpg');pic.class('picbdd');
-inp=createInput("enter 8 0's & 1's then hit enter");inp.position(20,200);
+inp=createInput("enter 8 0's & 1's here");inp.position(20,200);
 inp.class('inpbdd');inp.changed(tes);
 
 par=createP("hor speed");par.class('parbdd');
