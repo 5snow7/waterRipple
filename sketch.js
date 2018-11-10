@@ -34,5 +34,5 @@ function tes(){
  }
 
 function keyPressed(){
-Wr();	
+//Wr();	
 }
