@@ -1,0 +1,2 @@
+this is a text file to explain the processes in this project.  WaterRipple is an example of Cellular Automata.  
+It is a process of continually recomputing an array (here a pixel array) based on a set of given rules.
