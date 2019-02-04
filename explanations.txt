@@ -1,0 +1,1 @@
+this file is to keep notes of what is happening and how the system works.
