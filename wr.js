@@ -1,6 +1,6 @@
 
 let curwr=[];
-let prewr=[];let tempwr=[];
+let prewr=[];
 let dampen;
 function startWr(ar){
 for(let i=0;i<col;i++){
@@ -19,9 +19,9 @@ prewr[i][j-1]+prewr[i][j+1])/2-curwr[i][j];
 	curwr[i][j]=curwr[i][j]*dampen;
 	fill(floor(curwr[i][j]),0,0);rect(i,j,1,1);
 	}}	
-	tempwr=prewr;
-	prewr=curwr;
-	curwr=tempwr;
+	//tempwr=prewr;
+	//prewr=curwr;
+	curwr=prewr;
 	}
 
 function paintWr(ar){

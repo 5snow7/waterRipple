@@ -20,7 +20,14 @@ hr1.class('inpbdd');
 
 }
 
-
+function tes(){
+ let str=inp.value();
+ for(let j=0;j<str.length;j++){textSize(30);
+ stroke(0,250,0);list[j]=str.charAt(j);
+ text(list[j],40,40+20*j);
+ }
+ paint(cur);
+ }
 
 function xsp(){
 ob.vel.x=sl.value();

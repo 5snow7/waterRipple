@@ -10,7 +10,7 @@ can.position(300,30);can.class("bdd");
 ob=new object(200,50,3,2);
 startup();
 text("10011001 or 10100101 or 10110110", 20,100);
-text("01011001", 20,130);
+text("01011001 or 10101001", 20,130);
 startWr(curwr);startWr(prewr);
 dampen=.9;
 }
@@ -23,15 +23,7 @@ angle+=5;
 //Wr();
 }
 		
-let str;
-function tes(){
- let str=inp.value();
- for(let j=0;j<str.length;j++){textSize(30);
- stroke(0,250,0);list[j]=str.charAt(j);
- text(list[j],40,40+20*j);
- }
- paint(cur);
- }
+
 
 function keyPressed(){
 //Wr();	
