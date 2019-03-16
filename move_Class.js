@@ -5,7 +5,7 @@ this.pos=createVector(x,y);
 this.vel=createVector(xsp,ysp);
 this.acc=createVector(0,.1);
 }
-
+///edit
  move(){
 this.vel.add(this.acc);
 this.pos.add(this.vel);
